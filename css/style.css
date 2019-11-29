@@ -26,6 +26,14 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    height: 0vh; }
+  100% {
+    opacity: 1;
+    height: 100vh; } }
+
 .animated-moveInBottom {
   animation: moveInBottom 1s ease-out 1.2s;
   animation-fill-mode: backwards; }
@@ -129,7 +137,7 @@ body {
   position: relative; }
 
 .nav {
-  visibility: hidden;
+  display: none;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -137,12 +145,12 @@ body {
   z-index: 1400;
   height: 0vh;
   width: 100%;
-  background-color: #dda8a8;
   transition: all 1s cubic-bezier(0.94, -0.22, 0.04, 1.3); }
   .nav-checkbox {
     display: none; }
     .nav-checkbox:checked ~ .nav {
-      visibility: visible;
+      animation: scrollDown 1s;
+      display: block;
       opacity: .95;
       position: fixed;
       top: 0;
