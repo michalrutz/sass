@@ -10,6 +10,23 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" id="navi" class="nav-checkbox">
+        <label for="navi" class="nav-bttn">
+            <div class="nav-bttn-line nav-bttn-line-1"></div>
+            <div class="nav-bttn-line nav-bttn-line-2"></div>
+            <div class="nav-bttn-line nav-bttn-line-3"></div>
+        </label>
+        <div class="nav-bg"></div>
+        <nav class="nav">
+            <ul class="nav-list center-elements">
+                <li class="nav-list-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">about</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">our tours</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <!-- LOGO -->
         <div class="header__logo-box">
@@ -188,7 +205,9 @@
                                             repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
                                         </p>
                                 </div>
-                            
+                            <div class="center-elements">
+                                <a href="#" class="bttn-sm-2">read all comments</a>
+                            </div>
                         </div>
         </section>
         <section class="section-form">
@@ -225,6 +244,13 @@
                 </div>
             </div>
         </section>
+        <div class="popup" id="popup">
+            <div class="popup-box">?!
+                    <div class="close">
+                            <a href="#section-tours">X</a>
+                    </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
