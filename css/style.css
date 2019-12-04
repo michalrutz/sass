@@ -546,6 +546,14 @@ body {
     width: 25%;
     display: inline-block;
     position: relative; }
+    @media (max-width: 800px) {
+      .form .radio__group {
+        margin: auto;
+        width: 30%; } }
+    @media (max-width: 600px) {
+      .form .radio__group {
+        margin: auto;
+        width: 10rem; } }
   .form .bttn-radio {
     margin-top: .2rem;
     transition: all 1.1s;
